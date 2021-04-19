@@ -7,6 +7,14 @@ module.exports = {
           node: 'current'
         }
       }
-    ]
+    ],
+  ],
+  plugins: [
+    ["@babel/plugin-transform-modules-umd", {
+      exactGlobals: true,
+      globals: {
+        index: 'AnimalApi'
+      }
+    }]
   ]
 }
